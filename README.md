@@ -9,10 +9,15 @@ Luego al generarlo se debe insertar el selector que posee el componente hijo, en
 Para poder respetar el tipado en el componente hijo, podemos crear una `interface` en la que se define el tipo de dato que recibira el personaje, en este caso un `string` y un `number`, y para poder exportarlos se debe colocar la palabra `export` antes de `interface`, y así podemos respetar el tipado en cualquier componente que se utilice el `personaje`.
 
 Archivo HTML
+
 ![ComponenteHijo1](https://i.ibb.co/VQYqPyg/componentehijo1.png)
+
 Archivo component.ts
+
 ![componenteHijo2](https://i.ibb.co/kKc1qcB/componentehijo2.png)
-Archiv interface
+
+Archivo interface
+
 ![interface](https://i.ibb.co/4RWsZRW/Interface.png)
 
 ## ngFor 21/03/2021
