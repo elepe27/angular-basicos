@@ -16,3 +16,5 @@ Para cargar una lista se debe utilizar un `ngFor="let variable of objeto"` esto 
 
 Se debe importar el `FormsModule` en el modulo donde se esta trabajando, y para utilizarlo en el `form` se debe especificar un `(ngSubmit)="funcion()"` y en los `input` se debe especificar el `[(ngModel)]="objeto.propiedad"` para poder enviar los datos requeridos.
 
+![FormsModule, ngSubmit, ngModel](https://ibb.co/Phkqtd5)
+
