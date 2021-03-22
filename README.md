@@ -2,6 +2,33 @@
 
 En esta parte ire colocando mi avance de los cursos de Angular, especificamente en la sección 4 del curso de Fernando Herrera de Udemy
 
+## Ejercicio 22/03/2021
+
+Crear un componente para agregar o nuevo
+1.- Nuevo componente agregar (agregarComponent)
+R.- Se crea el componente `ng g c dbz/agregar --skipTest -is`
+
+2.- <h3> agregar hasta </form>
+R.- Se realiza copia de los `tags` al componente `agregar.component.html`
+
+![tag](https://i.ibb.co/5GNRZyF/ejercicio1.png)
+
+3.- Mover personaje y el metodo de agregar
+R.- Se mueve personaje y metodo agregar al `agregar.component.ts`
+
+4.- @Input personaje
+R.- se define el `@input` del componente hijo el cual recibira la información del `main-page.component.ts`
+
+![comphijo](https://i.ibb.co/P9DGnFR/comphijo.png)
+
+5.- @Input nuevo
+R.- `@Input('nuevo') nuevo :Personaje={
+    nombre:'',
+    poder:0
+  }`
+
+6.- <app-agregar [nuevo]="nuevo"></app-agregar>
+
 ## Crear componente hijo 21/03/2021
 
 Para crear un nuevo componente, se hace de la misma manera que los demás, `ng g c carpeta/nombre --skipTests -is` la finalidad de esto es para no tener un código muy extenso en el html, y tener todo más ordenado.

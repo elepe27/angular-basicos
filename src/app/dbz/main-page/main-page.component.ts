@@ -22,22 +22,28 @@ export class MainPageComponent  {
     
   ] ;
 
-  nuevo :Personaje={
-    nombre:'',
-    poder:0
+  nuevo : Personaje ={
+    nombre:'Maestro Roshi',
+    poder:85
   }
-  agregar(){
-    if(this.nuevo.nombre.trim().length===0){return;}
 
-    console.log(this.nuevo);
+  // nuevo :Personaje={
+  //   nombre:'',
+  //  poder:0
+  //  }
+  // agregar(){
+  //   if(this.nuevo.nombre.trim().length===0){return;}
 
-    this.personajes.push(this.nuevo);
+  //   console.log(this.nuevo);
 
-    this.nuevo = {
-      nombre:'',
-      poder:0
-    }
-  }
+  //   this.personajes.push(this.nuevo);
+
+  //   this.nuevo = {
+  //     nombre:'',
+  //     poder:0
+  //   }
+  //   console.log(this.personajes);
+  // }
   
   
 }

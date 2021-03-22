@@ -7,17 +7,7 @@
     </div>
     <!-- [value]="nuevo.nombre" (input)="( $event )"  -->
     <div class="col">
-        <h3>Agregar <small>{{nuevo.nombre}}</small></h3>
-        <hr>
-
-        <form (ngSubmit)="agregar()">
-            <input type="text" placeholder="Nombre" [(ngModel)]="nuevo.nombre" name="nombre" />
-            <input type="number" placeholder="Poder" [(ngModel)]="nuevo.poder" name="poder" />
-
-            <button type="submit">
-                agregar
-            </button>
-        </form>
+        <app-agregar [nuevo]="nuevo" [personajes]="personajes"></app-agregar>
     </div>
 
 </div>
