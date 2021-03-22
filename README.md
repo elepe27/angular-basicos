@@ -8,7 +8,7 @@ Crear un componente para agregar o nuevo
 1.- Nuevo componente agregar (agregarComponent)
 R.- Se crea el componente `ng g c dbz/agregar --skipTest -is`
 
-2.- <h3> agregar hasta </form>
+2.- `<h3> agregar hasta </form>`
 R.- Se realiza copia de los `tags` al componente `agregar.component.html`
 
 ![tag](https://i.ibb.co/5GNRZyF/ejercicio1.png)
@@ -27,7 +27,7 @@ R.- `@Input('nuevo') nuevo :Personaje={
     poder:0
   }`
 
-6.- <app-agregar [nuevo]="nuevo"></app-agregar>
+6.- `<app-agregar [nuevo]="nuevo"></app-agregar>`
 
 ## Crear componente hijo 21/03/2021
 
