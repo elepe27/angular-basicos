@@ -7,7 +7,7 @@
     </div>
     <!-- [value]="nuevo.nombre" (input)="( $event )"  -->
     <div class="col">
-        <app-agregar [nuevo]="nuevo" [personajes]="personajes"></app-agregar>
+        <app-agregar [nuevo]="nuevo" (OnNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar>
     </div>
 
 </div>

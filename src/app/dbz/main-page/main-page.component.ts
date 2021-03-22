@@ -45,5 +45,7 @@ export class MainPageComponent  {
   //   console.log(this.personajes);
   // }
   
-  
+  agregarNuevoPersonaje(personaje:Personaje){
+    this.personajes.push(personaje);
+  }
 }

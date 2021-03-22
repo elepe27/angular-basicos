@@ -6,28 +6,48 @@ En esta parte ire colocando mi avance de los cursos de Angular, especificamente 
 
 Crear un componente para agregar o nuevo
 1.- Nuevo componente agregar (agregarComponent)
+
 R.- Se crea el componente `ng g c dbz/agregar --skipTest -is`
 
 2.- `<h3> agregar hasta </form>`
+
 R.- Se realiza copia de los `tags` al componente `agregar.component.html`
 
 ![tag](https://i.ibb.co/5GNRZyF/ejercicio1.png)
 
 3.- Mover personaje y el metodo de agregar
+
 R.- Se mueve personaje y metodo agregar al `agregar.component.ts`
 
 4.- @Input personaje
+
 R.- se define el `@input` del componente hijo el cual recibira la información del `main-page.component.ts`
+
+
 
 ![comphijo](https://i.ibb.co/P9DGnFR/comphijo.png)
 
 5.- @Input nuevo
+
 R.- `@Input('nuevo') nuevo :Personaje={
     nombre:'',
     poder:0
   }`
 
 6.- `<app-agregar [nuevo]="nuevo"></app-agregar>`
+
+Para que un componente hijo se comunique con un componente padre, se utiliza `@Output` y se debe importar de `@angular/core`, este se debe crear de la siguiente manera `@Output() OnNuevoPersonaje:EventEmitter<personaje>= new EventEmitter();` 
+
+
+![eventEmitter](https://i.ibb.co/VxCzQPy/event-emitter.png)
+
+al usar el metodo OnNuevoPersonaje dejara utilizar diversas opciones y la que utilizaremos se llama `emit` y dejará usar 2 tipos, y como es de tipo personaje, admite utilizar el `this.nuevo` siendo también el de tipo `personaje` en el `tag` del componente hijo mirado desde el componente padre se utilizar llamar el evento que se creo en el hijo entre parentesis `(OnNuevoPersonaje)="agregarNuevoPersonaje($event)"` en la que vendra el nuevo Personaje, y por parte del `main-page.component.ts`  se crea la función esperando el argumento de tipo personaje y se agrega al objeto.
+
+![eventemitter1](https://i.ibb.co/xmJXT8K/1.png)
+
+![eventemitter2](https://i.ibb.co/74HG991/2.png)
+
+
 
 ## Crear componente hijo 21/03/2021
 
