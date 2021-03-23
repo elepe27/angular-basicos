@@ -8,7 +8,11 @@ Los servicios sirven para centralizar las peticiones de las aplicaciones, singul
 
 ![Servicios](https://i.ibb.co/vHcSp2J/servicios.png)
 
-![ServicioENmodulo](https://i.ibb.co/jVfT479/servicios-2.png)
+![ServicioEnComponent](https://i.ibb.co/jVfT479/servicios-2.png)
+
+Si se crea de manera manual el servicio, se debe agregar en los `providers` del modulo en el cual se quiere utilizar el servicio
+
+![sericiosEnmodulo](https://i.ibb.co/wz1nKnJ/servicios3.png)
 
 
 ## Ejercicio 22/03/2021
