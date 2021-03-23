@@ -2,6 +2,18 @@
 
 En esta parte ire colocando mi avance de los cursos de Angular, especificamente en la sección 4 del curso de Fernando Herrera de Udemy
 
+## Metodos en el servicio 23/03/2021
+
+Los metodos van la mayoria de las veces abajo del `constructor` esto con la finalidad de llevar un orden en el codigo del proyecto, se crea el metodo `agregarPersonaje(_personaje:Personaje){this._personaje.push;}` esto hará que se inserte en el arreglo `Personaje[]` del `servicio`.
+
+Luego se debe instanciar en el componente que se quiera utilizar el servicio, esto se hace de igual manera en el `constructor(private _dbzService:DbzService)` y se puede usar el `this._dbzService.agregarPErsonaje()`
+
+![metodo1](https://i.ibb.co/BT2yGsV/metodoservice1.png)
+
+![metodo2](https://i.ibb.co/ydCBqkx/metodoservice2.png)
+
+
+
 ## Centralizar el acceso de los personajes en el servicio 23/03/2021
 
 Para centralizar los datos, se debe mover el arreglo de personaje, esto con la finalidad de dejar los datos en el servicio, y que solo los componentes lo consuman de `dbz.service.ts`, una vez movidos se puede crear del tipo privado el arreglo, para que no puedan todos los componentes llamarlo, y se crea un 
