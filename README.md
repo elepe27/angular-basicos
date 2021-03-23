@@ -2,6 +2,20 @@
 
 En esta parte ire colocando mi avance de los cursos de Angular, especificamente en la sección 4 del curso de Fernando Herrera de Udemy
 
+## Centralizar el acceso de los personajes en el servicio 23/03/2021
+
+Para centralizar los datos, se debe mover el arreglo de personaje, esto con la finalidad de dejar los datos en el servicio, y que solo los componentes lo consuman de `dbz.service.ts`, una vez movidos se puede crear del tipo privado el arreglo, para que no puedan todos los componentes llamarlo, y se crea un 
+
+`get personajes():Personaje[]{`
+        `return [...this._personajes];`
+    `}`
+
+con esto, se puede crear un get en el componente que se necesita utilizar la información, haciendo retornar el arreglo con el servicio de esta manera
+
+![ServicioCentralizado](https://i.ibb.co/gdHf7NX/centralizar-Service.png)
+
+
+
 ## Servicios 23/03/2021
 
 Los servicios sirven para centralizar las peticiones de las aplicaciones, singularmente estos se pueden instanciar una sola vez de manera global, estos se llaman en los componentes, y para llamarlos se hace en el `constructor` de la siguiente manera `constructor(public dbzService:NombreServicio){}` una vez realizado, este podrá llamarse sin ningún problema
